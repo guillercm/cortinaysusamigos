@@ -34,6 +34,10 @@
     padding: 0;
 }
 
+html, body {
+  overscroll-behavior-y: none;
+}
+
 body {
     background-color: var(--bg-base);
     color: var(--text-main);
@@ -42,7 +46,6 @@ body {
     flex-direction: column;
     min-height: 100vh;
     overflow-x: hidden;
-    overscroll-behavior: contain;
 }
 
 .main-content {
