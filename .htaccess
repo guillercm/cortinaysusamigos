@@ -1,0 +1,7 @@
+Options -Indexes
+
+<IfModule mod_rewrite.c>
+    RewriteEngine On
+    # Bloquear el acceso a directorios sensibles. Scripts, assets y styles deben poder leerse en el cliente.
+    RewriteRule ^(config|includes)/ - [F,L]
+</IfModule>

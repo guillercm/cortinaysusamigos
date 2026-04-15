@@ -1,0 +1,33 @@
+{
+    "name": "Cortina y sus amigos",
+    "email": "cortinaysusamigos@gmail.com",
+    "url": "https://www.cortinaysusamigos.com",
+    "baseUrlYoutube": "https://www.youtube.com/embed/",
+    "social_media": {
+        "instagram": "https://www.instagram.com/cortinaysusamigos/",
+        "youtube": "https://www.youtube.com/cortinaysusamigos",
+        "tiktok": "https://www.tiktok.com/@cortinaysusamigos"
+    },
+    "links": [
+        {
+            "label": "Inicio",
+            "url": ""
+        },
+        {
+            "label": "Películas",
+            "url": "peliculas"
+        },
+        {
+            "label": "Juegos",
+            "url": "juegos"
+        },
+        {
+            "label": "Tienda",
+            "url": "tienda"
+        },
+        {
+            "label": "Creador",
+            "url": "creador"
+        }
+    ]
+}

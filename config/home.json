@@ -1,0 +1,51 @@
+{
+    "shortDescription": "Cortina y sus amigos es una serie de animación que sigue las aventuras de un grupo de amigos en situaciones cotidianas llenas de humor y caos.",
+    "description": [
+        "¡Bienvenido al mundo de Cortina!",
+        "Personajes que van desde un hámster mecánico o un perro salchicha agente inmoviliario hasta un perezoso que siempre necesita ir al baño. Cortina y sus amigos te llevarán a un viaje lleno de risas, situaciones absurdas y momentos entrañables. Acompáñalos en sus locuras diarias, desde reuniones de trabajo hasta partidos de voleibol, y descubre cómo convierten lo cotidiano en algo extraordinario."
+    ],
+    "trailer": {
+        "title": "Tráiler oficial de Cortina y sus amigos",
+        "youtubeId": "WAF00Cd5P3g"
+    },
+    "characterGroups": [
+        {
+            "id": 1,
+            "name": "Cortina",
+            "description": "Pato programador que teletrabaja desde su habitación, come garbanzos en las reuniones y cuenta chistes que nadie pide. Miedoso, dormilón y con un corazón enorme."
+        },
+        {
+            "id": 2,
+            "name": "Tattaira",
+            "description": "Tatuadora con gran agilidad mental que lleva los cotilleos al día y el caos bajo control. Si hay que organizar al grupo, ya está haciéndolo."
+        },
+        {
+            "id": 3,
+            "name": "Grupo de Felipe",
+            "images": [
+                "felipe_carlos",
+                "diego_jossue",
+                "anthony_dylan"
+            ],
+            "description": "Entre herramientas, cadenas de oro, dolores de tobillo y algún vacile, este grupo se las apaña a su manera."
+        },
+        {
+            "id": 4,
+            "name": "Grupo de Montoro",
+            "image": "grupomontoro",
+            "description": "Un científico al límite, un socorrista harto de todo, una empleada de marketing que mezcla idiomas y un perezoso que suele ir al baño en el peor momento. Un grupo de lo más variopinto que funciona mejor de lo que parece."
+        },
+        {
+            "id": 5,
+            "name": "Los guardianes del mundo",
+            "image": "grupogerman",
+            "description": "Arqueros, guerreros y expertos en pociones. Aunque no todos se acuerden de llevar las pociones, el mundo está en buenas manos."
+        },
+        {
+            "id": 6,
+            "name": "Los Quelófaros",
+            "image": "quelofaros",
+            "description": "Mitad tortuga, mitad camaleón... y completamente únicos. Son los secundarios que aparecen en cada rincón del mundo cada uno con su propia personalidad."
+        }
+    ]
+}
