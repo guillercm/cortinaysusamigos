@@ -29,10 +29,11 @@
 .error-container {
     position: relative;
     z-index: 2;
-    padding: 2rem;
+    padding: 0;
+    padding-top: 2rem;
     max-width: 800px;
     width: 90%;
-    margin: 0 auto;
+    margin: 0;
 }
 
 .error-image {
@@ -67,7 +68,6 @@
 @media (max-width: 768px) {
     .error-section {
         min-height: 60vh;
-        margin-top: -2rem;
         /* Reduce gap if header overlaps */
     }
 }
