@@ -213,21 +213,37 @@ document.addEventListener('DOMContentLoaded', () => {
 
         // Limites de impostores => Math.floor(players.length / 2)
         const maxImpostors = Math.max(1, Math.floor(players.length / 2));
-        numImpostorsSelect.innerHTML = "";
-        for (let i = 1; i <= maxImpostors; i++) {
-            const opt = document.createElement('option');
-            opt.value = i;
-            opt.textContent = i;
-            numImpostorsSelect.appendChild(opt);
-        }
+        const numImpostorsStatic = document.getElementById('numImpostorsStatic');
 
-        // Restaurar valor guardado si es válido
-        if (gameConfig.numImpostors <= maxImpostors) {
-            numImpostorsSelect.value = gameConfig.numImpostors;
-        } else {
+        if (maxImpostors === 1) {
+            numImpostorsSelect.style.display = 'none';
+            if (numImpostorsStatic) {
+                numImpostorsStatic.style.display = 'inline-block';
+                numImpostorsStatic.textContent = '1';
+            }
+            numImpostorsSelect.innerHTML = "<option value='1'>1</option>";
             numImpostorsSelect.value = 1;
             gameConfig.numImpostors = 1;
-            saveGameConfig();
+        } else {
+            numImpostorsSelect.style.display = 'inline-block';
+            if (numImpostorsStatic) numImpostorsStatic.style.display = 'none';
+            
+            numImpostorsSelect.innerHTML = "";
+            for (let i = 1; i <= maxImpostors; i++) {
+                const opt = document.createElement('option');
+                opt.value = i;
+                opt.textContent = i;
+                numImpostorsSelect.appendChild(opt);
+            }
+
+            // Restaurar valor guardado si es válido
+            if (gameConfig.numImpostors <= maxImpostors) {
+                numImpostorsSelect.value = gameConfig.numImpostors;
+            } else {
+                numImpostorsSelect.value = 1;
+                gameConfig.numImpostors = 1;
+                saveGameConfig();
+            }
         }
 
         // Sincronizar otros campos simples

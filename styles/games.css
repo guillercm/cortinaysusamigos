@@ -268,14 +268,23 @@
     margin-bottom: 1rem;
 }
 
-.config-row select {
+.config-row select,
+.config-row .static-value {
     padding: 0.5rem;
-    font-size: 1rem;
-    background: var(--bg-base);
+    font-size: 1.1rem;
     color: var(--text-main);
+    margin-left: auto;
+    font-weight: 600;
+}
+
+.config-row select {
+    background: var(--bg-base);
     border: 1px solid var(--bg-surface-hover);
     border-radius: var(--border-radius-sm);
-    margin-left: auto;
+}
+
+.config-row .static-value {
+    padding-right: 1rem;
 }
 
 .hint-toggle-row {

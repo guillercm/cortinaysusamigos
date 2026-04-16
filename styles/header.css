@@ -34,14 +34,23 @@
     transition: transform 0.3s ease;
 }
 
-.logo-title {
-    margin-left: 2rem;
+.logo-title,
+.item-title {
     font-family: var(--font-heading);
     font-size: 1.8rem;
     font-weight: 700;
     color: var(--c-primary);
     white-space: nowrap;
     transition: color 0.3s ease;
+}
+
+.logo-title {
+    margin-left: 2rem;
+}
+
+.item-title {
+    margin-left: 1rem;
+    display: none;
 }
 
 .header-logo:hover img {
@@ -121,6 +130,10 @@
 @media (max-width: 500px) {
     .logo-title {
         display: none;
+    }
+
+    .item-title {
+        display: block;
     }
 }
 
