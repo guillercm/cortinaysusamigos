@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Juegos | Cortina y sus amigos</title>
+    <link rel="shortcut icon" href="assets/favicon.ico" />
+    <meta name="description" content="Página oficial de Cortina y sus amigos.">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://www.cortinaysusamigos.com/juegos">
+    
+    <!-- Open Graph Metadata -->
+    <meta property="og:title" content="Juegos | Cortina y sus amigos">
+    <meta property="og:image" content="https://www.cortinaysusamigos.com/assets/shared.jpg">
+    <meta property="og:site_name" content="Cortina y sus amigos">
+    <meta property="og:description" content="Página oficial de Cortina y sus amigos.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://www.cortinaysusamigos.com/juegos">
+    
+    <!-- Twitter Metadata -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:site" content="Cortina y sus amigos">
+    <meta name="twitter:title" content="Juegos | Cortina y sus amigos">
+    <meta name="twitter:description" content="Página oficial de Cortina y sus amigos.">
+    <meta name="twitter:image" content="https://www.cortinaysusamigos.com/assets/shared.jpg">
+    <meta name="twitter:url" content="https://www.cortinaysusamigos.com/juegos">
+    
+    <!-- Estilos base -->
+    <link rel="stylesheet" href="styles/general.css">
+    <link rel="stylesheet" href="styles/header.css">
+    <link rel="stylesheet" href="styles/footer.css">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&family=Inter:wght@400;500;700&display=swap" rel="stylesheet">
+    
+    <script src="scripts/functions.js?20260416"></script>
+<link rel="stylesheet" href="styles/games.css">
+</head>
+<body>
+    <header class="main-header">
+        <div class="header-container">
+            <a href="index.html" class="header-logo" aria-label="Ir al inicio">
+                <img src="assets/logo.png" alt="Logo de Cortina y sus amigos">
+                <span class="logo-title">Cortina y sus amigos</span>
+            </a>
+            
+            <input type="checkbox" id="menu-toggle" class="menu-toggle">
+            <label for="menu-toggle" class="menu-backdrop" aria-hidden="true"></label>
+            <label for="menu-toggle" class="hamburger-menu" aria-label="Abrir menú">
+                <span></span>
+                <span></span>
+                <span></span>
+            </label>
+            
+            <nav class="header-nav">
+                <ul class="nav-links">
+                    <li class="nav-item"><a href="index.html" class="">Inicio</a></li><li class="nav-item"><a href="peliculas.html" class="">Películas</a></li><li class="nav-item"><a href="juegos.html" class="active">Juegos</a></li><li class="nav-item"><a href="tienda.html" class="">Tienda</a></li><li class="nav-item"><a href="creador.html" class="">Creador</a></li>                </ul>
+            </nav>
+        </div>
+    </header>
+<script>
+const GAMES_DATA = {"games":{"impostor":{"name":"Impostor","instructions":["Todos los jugadores reciben la misma palabra, excepto los impostores.","Por turnos, cada jugador dice una palabra relacionada con la palabra secreta, el impostor deberá fingir qué sabe cual es.","Cuando ya todos hayan dicho su palabra, se realiza una votación. Si el impostor o impostores son descubiertos, ganan el resto de jugadores. Si no, se sigue jugando hasta que no queden impostores.","El impostor gana si no es descubierto al final de las rondas."],"roles":{"civil":{"name":"Civil","image":"civil","color":"blue","description":"Intenta averiguar quien es el impostor."},"impostor":{"name":"Impostor","image":"impostor","color":"red","description":"Intenta descubrir cual es la palabra para no ser expulsado."},"special":[{"name":"Montoro","image":"sloth","color":"blue","playersNeeded":5,"description":"Eres un civil pero si te votan, di 'voy al baño' para librarte. Te quedarás fuera una ronda pero volverás en la siguiente."},{"name":"Dylan","image":"jester","color":"green","playersNeeded":6,"description":"Tu objetivo es conseguir que los demás te expulsen en las votaciones. Si lo logras, ¡ganas al instante!"}]},"examples":[{"youtubeId":"WAF00Cd5P3g"},{"youtubeId":"WAF00Cd5P3g"},{"youtubeId":"WAF00Cd5P3g"}],"wordPackets":[{"id":1,"name":"Cortina y sus amigos","words":["quelófaro","baño","garbanzo","cono","voleibol","pizza","tobillo","altavoz","oro","cactus","programación","laboratorio","cliente","tatuaje","pisos","pisos","vendedor inmobiliario","humedades","calcetines"]},{"id":2,"name":"Animales","words":["gato","perro","elefante","jirafa","tortuga","serpiente","león","tigre","oso","mono","conejo","zorro","lobo","panda","koala","delfín","ballena","tiburón","águila","loro","cocodrilo","hipopótamo","rinoceronte","cebra","camello","pingüino","flamenco","murciélago","erizo","castor","nutria","mapache","ciervo","jabalí","lince","leopardo","melena","colmillo","garra","pelaje","escama","pluma","pezuña","trompa","cuerno","cola","madriguera","manada","depredador","presa","hibernación","migración","jaula","zoo","safari","selva","sabana","nido","guarida","rugido","aullido","maullido","ladrido","camuflaje","instinto","caza","especie","extinción","veterinario"]},{"id":3,"name":"Cocina y gastronomía","words":["sartén","cuchillo","tabla de cortar","colador","batidora","rallador","mortero","espátula","cazo","asar","freír","hervir","saltear","fermentar","emulsionar","reducir","flambear","umami","acidez","amargor","dulzor","salinidad","picante","ahumado","cremoso","crujiente","levadura","comino","azafrán","romero","tomillo","vinagre","mantequilla","harina","caldo","nata","orégano","guarnición","maridaje","receta","degustación","temporada","presentación","ración","menú","chef","entrante","postre","aliño","adobo","escabeche","sofrito","rebozado","gratinado","estofado","sushi","brasa","vapor","wok","parrilla","horno","nevera","despensa","delantal","recetario","paella","jamón ibérico","queso","chocolate","croqueta","gazpacho","tortilla de patatas","pulpo a la gallega","churros con chocolate","ensaladilla rusa","salmorejo","turrón","polvorón","mazapán"]},{"id":4,"name":"Hogar","words":["salón","cocina","dormitorio","baño","pasillo","terraza","sótano","buhardilla","garaje","jardín","sofá","armadura","estantería","armario","mesita","escritorio","silla","cama","lámpara","cortina","lavadora","lavavajillas","microondas","aspiradora","calefacción","aire acondicionado","frigorífico","tostadora","televisor","enchufe","barrer","fregar","planchar","limpiar","ordenar","pintar","ventilar","regar","reparar","colgar","fontanero","electricista","alquiler","hipoteca","reforma","mudanza","vecino","portero","comunidad","ascensor","buzón","felpudo","persiana","radiador","grifo","desagüe","interruptor","cerradura","timbre","ventana","chimenea","moqueta","parquet","azulejo","gotera","humedad","cojín","manta","florero","cuadro"]},{"id":5,"name":"Ropa y moda","words":["camiseta","vaqueros","vestido","abrigo","bufanda","guantes","sombrero","corbata","cinturón","calcetines","algodón","lino","seda","lana","cuero","poliéster","terciopelo","denim","cachemira","satén","minimalista","vintage","urbano","elegante","casual","atemporal","oversize","sastre","collar","traje","falda","pantalones","chaqueta","suéter","blusa","pendientes","pulsera","bolso","tacones","zapatillas","gafas de sol","reloj","anillo","broche","costura","talla","tejido","estampado","temporada","colección","desfile","tendencia","outlet","diseñador","maniquí","escaparate","probador","etiqueta","cremallera","botón","remiendo","lavado","planchado","desteñido","encogido","arrugado","descosido","tinte","bordado","lentejuelas","flecos","cuello","calzoncillos","manga","herrete"]},{"id":6,"name":"Océano","words":["tiburón","pulpo","medusa","ballena","delfín","calamar","langosta","cangrejo","coral","anémona","corriente","marejada","tsunami","abismo","arrecife","bajamar","bioluminiscencia","zona fótica","zona abisal","fosa","talud","submarino","buceo","naufragio","tesoro","ancla","faro","brújula","deriva","marea","salinidad","presión","oxígeno","plancton","alga","islote","glaciar","iceberg","polo","profundidad","exploración","expedición","ecosistema","biodiversidad","depredador","migración","veneno","camuflaje","especie invasora","pesca","red","arpón","contaminación","plástico","conservación"]},{"id":7,"name":"Videojuegos","words":["aventura","estrategia","rol","plataformas","shooter","puzzle","simulación","lucha","carreras","supervivencia","multijugador","efectos de sonido","cooperativo","competitivo","campaña","modo historia","mundo abierto","battle royale","tower defense","personaje","protagonista","villano","NPC","KO","fuera de combate","inventario","misión","nivel","jefe final","checkpoint","vida","escudo","campero","experiencia","habilidad","subir de nivel","crafteo","loot","cofre","espada","pico","respawn","partida","guardado","tutorial","dificultad","parche","actualización","expansión","servidor","lag","ping","matchmaking","ranking","clasificatoria","temporada","pase de batalla","skin","moneda virtual","micropago","logro","trofeo","speedrun","glitch","easter egg","truco","modo","juegos recreativos","emulador","consola"]},{"id":8,"name":"Espacio y astronomía","words":["galaxia","nebulosa","agujero negro","estrella","planeta","satélite","cometa","asteroide","meteorito","constelación","supernova","materia oscura","energía oscura","gravedad","órbita","rotación","traslación","eclipse","marea gravitacional","telescopio","extraterrestre","cohete","lanzadera","estación espacial","traje espacial","ingravidez","vacío","radiación","fusión nuclear","año luz","universo","multiverso","big bang","infrarrojo","ultravioleta","sol","luna","mercurio","Vía Láctea","venus","marte","júpiter","saturno","urano","neptuno","plutón","anillos","luna","atmósfera","astronauta","astrónomo","astrofísica"]},{"id":9,"name":"Antiguo Egipto","words":["faraón","pirámide","esfinge","momia","sarcófago","jeroglífico","papiro","templo","tumba","Nilo","delta","amuleto","escarabajo","ojo de Horus","dios Ra","dios Osiris","dios Anubis","escriba","arquero","soldado","esclavo","artesano","embalsamador","resina","lino","vendaje","canope","ushabti","juicio de Osiris","alma","altar","ofrenda","incienso","corona","ritual","collar","sandalia","cobre","oro","lapislázuli","alabastro"]},{"id":10,"name":"Gimnasio","words":["mancuerna","barra","disco","banda elástica","cinta de correr","bicicleta estática","elíptica","remo","banco","sentadillas","polea","máquina","colchoneta","saco de boxeo","comba","cajón de salto","peso muerto","press banca","dominada","fondos","curl de bíceps","extensión de tríceps","zancada","plancha","burpee","cardio","hipertrofia","fuerza","resistencia","flexibilidad","movilidad","calentamiento","enfriamiento","series","repeticiones","descanso","progresión","sobrecarga","frecuencia","volumen","intensidad","agujetas","lesión","recuperación","proteína","creatina","batido","dieta","déficit calórico","superávit","grasa","músculo","abdominales","pectorales","dorsales","bíceps","tríceps","cuádriceps","isquiotibiales","gemelos","glúteos","hombros","trapecio","entrenador personal","vestuario","taquilla","mensualidad","clase colectiva","spinning","zumba"]},{"id":11,"name":"Música","words":["guitarra","piano","violín","batería","bajo","trompeta","saxofón","flauta","clarinete","arpa","acordeón","ukulele","contrabajo","oboe","rock","jazz","clásica","pop","flamenco","reggaeton","hip hop","electrónica","metal","punk","ópera","melodía","armonía","ritmo","compás","tempo","a capela","acorde","escala","tono","semitono","octava","partitura","pentagrama","nota","clave","afinar","improvisación","solo","estribillo","verso","puente","intro","outro","directo","concierto","gira","backstage","micrófono","amplificador","mezclador","ecualizador","efectos","estudio","producción","masterización","banda","solista","director de orquesta","compositor","letra"]},{"id":12,"name":"Deportes","words":["fútbol","baloncesto","tenis","natación","ciclismo","boxeo","rugby","voleibol","balonmano","golf","esquí","surf","escalada","esgrima","pelota","raqueta","red","portería","canasta","hoyo","pista","campo","piscina","tatami","podio","medalla","trofeo","árbitro","juez de línea","falta","penalti","tarjeta roja","tarjeta amarilla","fuera de juego","saque","volea","sprint","maratón","relevos","salto de altura","lanzamiento de disco","jabalina","martillo","triatlón","karate","taekwondo","judo","guante","casco","espinillera","vendaje","cronómetro","marcador","prórroga","penaltis","clasificación","liga","torneo","final","vestuario","banquillo","afición","estadio","gradas"]},{"id":13,"name":"Navidad","words":["árbol","estrella","bola","guirnalda","espumillón","belén","portal","pesebre","roscón de reyes","pastor","rey mago","camello","regalo","lazo","papel de regalo","calcetín","chimenea","trineo","reno","elfo","Papá Noel","villancico","campanilla","vela","calendario de adviento","turrón","polvorón","mazapán","champán","sidra","pavo","cordero","marisco","besugo","lotería","décimo","brindis","cotillón","uvas","campanadas","año nuevo","propósitos","familia","reunión","postal","felicitación","nieve","muñeco de nieve","trineo","patinaje","mercadillo","luces","iluminación","nacimiento","misa del gallo","Nochebuena","Nochevieja","Reyes","cabalgata","ilusión","espera","sorpresa","solidaridad","donación","voluntariado","frío","abrigo","bufanda"]},{"id":14,"name":"Cosas de baño","words":["ducha","bañera","lavabo","inodoro","bidé","espejo","toalla","albornoz","zapatillas","alfombra","jabón","champú","acondicionador","gel de ducha","esponja","estropajo","piedra pómez","maquinilla","espuma de afeitar","aftershave","cepillo de dientes","pasta de dientes","hilo dental","enjuague bucal","secador","plancha de pelo","rulo","peine","cepillo","espejo de aumento","maquillaje","desmaquillante","crema hidratante","sérum","mascarilla","contorno de ojos","colonia","perfume","desodorante","cortaúñas","lima de uñas","pinzas","bastoncillos","papel higiénico","ambientador","escobilla","cisterna","grifo","alcachofa","agua caliente","vaho","condensación","goteo","desatascador","azulejo","baldosa","bañarse","ducharse","afeitarse","depilarse","lavarse los dientes","peinarse","maquillarse","canturrear","pesarse","báscula","tirita"]},{"id":15,"name":"Excusas para llegar tarde","words":["atasco","tráfico","accidente","corte de carretera","desvío","obras","semáforo","aparcamiento","multa","grúa","pinchazo","avería","batería","retraso","huelga","metro","autobús","tren","vuelo","cancelación","alarma","quedarse dormido","corte de luz","apagón","reunión","llamada urgente","jefe","cliente","emergencia","médico","dentista","vecino","fontanero","gotera","inundación","mascota","perro","veterinario","niño","colegio","lluvia","tormenta","nieve","hielo","niebla","paraguas","perderse","GPS","mapa","batería del móvil","cobertura","confusión de hora","confusión de lugar","olvido","llaves","cartera","gafas","paquete","entrega","firma","cola","trámite"]}]},"conecto":{"name":"Conecto","instructions":["Un jugador piensa en una palabra y revela solo la primera letra.","El resto del grupo, deberá pensar en una palabra que empiece por la letra que haya dicho el jugador del turno, cuando a alguien se le ocurra alguna, dirá en voz alta a todo el grupo una palabra relaccionada con esa que pensó. Si otro jugador, que no sea el del turno, cree saber la palabra que tiene en mente, grita '¡Conecto!'","Ambos cuentan '1, 2, 3' y dicen a la vez la palabra que tenían en mente, junto al jugador del turno. Si los dos que conectaron dicen la misma palabra pero el del turno no, este deberá revelar la siguiente letra. En cualquier otro caso, se sigue jugando.","El juego termina cuando alguien adivina la palabra secreta."],"examples":[{"youtubeId":"WAF00Cd5P3g"},{"youtubeId":"WAF00Cd5P3g"}]}}};
+</script>
+
+<main class="main-content">
+<section class="games-section">
+    <div class="page-header">
+        <h1>Juegos</h1>
+    </div>
+
+    <div class="games-container">
+        <!-- Tarjeta Impostor -->
+                <article class="game-card" id="card-impostor">
+            <div class="game-info">
+                <h2>Impostor</h2>
+                <div class="instructions">
+                    <h3>Cómo jugar:</h3>
+                    <ul>
+                                            <li>Todos los jugadores reciben la misma palabra, excepto los impostores.</li>
+                                            <li>Por turnos, cada jugador dice una palabra relacionada con la palabra secreta, el impostor deberá fingir qué sabe cual es.</li>
+                                            <li>Cuando ya todos hayan dicho su palabra, se realiza una votación. Si el impostor o impostores son descubiertos, ganan el resto de jugadores. Si no, se sigue jugando hasta que no queden impostores.</li>
+                                            <li>El impostor gana si no es descubierto al final de las rondas.</li>
+                                        </ul>
+                </div>
+                <!-- Botón que activa la modal del SPA -->
+                <button class="btn btn-play" id="btnPlayImpostor">Jugar Ahora</button>
+            </div>
+            <div class="game-examples">
+                                    <div class="carousel-videos" id="carouselImpostor">
+                        <div class="carousel-track">
+                                                            <!-- Lazy load si hay más de 2 (index > 1) -->
+                                                                <div class="carousel-slide">
+                                    <iframe width="100%" height="100%" src="https://www.youtube.com/embed/WAF00Cd5P3g" srcdoc="&lt;style&gt;
+        * {padding:0;margin:0;overflow:hidden;box-sizing:border-box}
+        html,body{height:100%;background:#000}
+        img{position:absolute;width:100%;height:100%;top:0;bottom:0;margin:auto;object-fit:cover}
+        .play-button{width:68px;height:48px;background:rgba(0,0,0,0.7);border-radius:12%;display:flex;justify-content:center;align-items:center;position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);cursor:pointer}
+        .play-button span{font:48px/1.5 sans-serif;color:white}
+    &lt;/style&gt;
+    &lt;a href=&#039;https://www.youtube.com/embed/WAF00Cd5P3g?autoplay=1&#039;&gt;
+        &lt;img src=&#039;https://img.youtube.com/vi/WAF00Cd5P3g/maxresdefault.jpg&#039; alt=&#039;Ejemplo 1&#039; onerror=&#039;this.src=&quot;https://img.youtube.com/vi/WAF00Cd5P3g/0.jpg&quot;&#039;&gt;
+        &lt;div class=&#039;play-button&#039;&gt;
+            &lt;span&gt;▶&lt;/span&gt;
+        &lt;/div&gt;
+    &lt;/a&gt;" title="Ejemplo 1" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen loading="lazy"></iframe>                                </div>
+                                                            <!-- Lazy load si hay más de 2 (index > 1) -->
+                                                                <div class="carousel-slide">
+                                    <iframe width="100%" height="100%" src="https://www.youtube.com/embed/WAF00Cd5P3g" srcdoc="&lt;style&gt;
+        * {padding:0;margin:0;overflow:hidden;box-sizing:border-box}
+        html,body{height:100%;background:#000}
+        img{position:absolute;width:100%;height:100%;top:0;bottom:0;margin:auto;object-fit:cover}
+        .play-button{width:68px;height:48px;background:rgba(0,0,0,0.7);border-radius:12%;display:flex;justify-content:center;align-items:center;position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);cursor:pointer}
+        .play-button span{font:48px/1.5 sans-serif;color:white}
+    &lt;/style&gt;
+    &lt;a href=&#039;https://www.youtube.com/embed/WAF00Cd5P3g?autoplay=1&#039;&gt;
+        &lt;img src=&#039;https://img.youtube.com/vi/WAF00Cd5P3g/maxresdefault.jpg&#039; alt=&#039;Ejemplo 2&#039; onerror=&#039;this.src=&quot;https://img.youtube.com/vi/WAF00Cd5P3g/0.jpg&quot;&#039;&gt;
+        &lt;div class=&#039;play-button&#039;&gt;
+            &lt;span&gt;▶&lt;/span&gt;
+        &lt;/div&gt;
+    &lt;/a&gt;" title="Ejemplo 2" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen loading="lazy"></iframe>                                </div>
+                                                            <!-- Lazy load si hay más de 2 (index > 1) -->
+                                                                <div class="carousel-slide">
+                                    <iframe width="100%" height="100%" data-src="https://www.youtube.com/embed/WAF00Cd5P3g" data-srcdoc="&lt;style&gt;
+        * {padding:0;margin:0;overflow:hidden;box-sizing:border-box}
+        html,body{height:100%;background:#000}
+        img{position:absolute;width:100%;height:100%;top:0;bottom:0;margin:auto;object-fit:cover}
+        .play-button{width:68px;height:48px;background:rgba(0,0,0,0.7);border-radius:12%;display:flex;justify-content:center;align-items:center;position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);cursor:pointer}
+        .play-button span{font:48px/1.5 sans-serif;color:white}
+    &lt;/style&gt;
+    &lt;a href=&#039;https://www.youtube.com/embed/WAF00Cd5P3g?autoplay=1&#039;&gt;
+        &lt;img src=&#039;https://img.youtube.com/vi/WAF00Cd5P3g/maxresdefault.jpg&#039; alt=&#039;Ejemplo 3&#039; onerror=&#039;this.src=&quot;https://img.youtube.com/vi/WAF00Cd5P3g/0.jpg&quot;&#039;&gt;
+        &lt;div class=&#039;play-button&#039;&gt;
+            &lt;span&gt;▶&lt;/span&gt;
+        &lt;/div&gt;
+    &lt;/a&gt;" title="Ejemplo 3" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen loading="lazy"></iframe>                                </div>
+                                                    </div>
+                                                    <button class="carousel-btn prev">&lt;</button>
+                            <button class="carousel-btn next">&gt;</button>
+                                            </div>
+                            </div>
+        </article>
+        
+        <!-- Tarjeta Conecto -->
+                <article class="game-card" id="card-conecto">
+            <div class="game-info">
+                <h2>Conecto</h2>
+                <div class="instructions">
+                    <h3>Cómo jugar:</h3>
+                    <ul>
+                                            <li>Un jugador piensa en una palabra y revela solo la primera letra.</li>
+                                            <li>El resto del grupo, deberá pensar en una palabra que empiece por la letra que haya dicho el jugador del turno, cuando a alguien se le ocurra alguna, dirá en voz alta a todo el grupo una palabra relaccionada con esa que pensó. Si otro jugador, que no sea el del turno, cree saber la palabra que tiene en mente, grita &#039;¡Conecto!&#039;</li>
+                                            <li>Ambos cuentan &#039;1, 2, 3&#039; y dicen a la vez la palabra que tenían en mente, junto al jugador del turno. Si los dos que conectaron dicen la misma palabra pero el del turno no, este deberá revelar la siguiente letra. En cualquier otro caso, se sigue jugando.</li>
+                                            <li>El juego termina cuando alguien adivina la palabra secreta.</li>
+                                        </ul>
+                </div>
+            </div>
+            <div class="game-examples">
+                                    <div class="carousel-videos" id="carouselConecto">
+                        <div class="carousel-track">
+                                                                                            <div class="carousel-slide">
+                                    <iframe width="100%" height="100%" src="https://www.youtube.com/embed/WAF00Cd5P3g" srcdoc="&lt;style&gt;
+        * {padding:0;margin:0;overflow:hidden;box-sizing:border-box}
+        html,body{height:100%;background:#000}
+        img{position:absolute;width:100%;height:100%;top:0;bottom:0;margin:auto;object-fit:cover}
+        .play-button{width:68px;height:48px;background:rgba(0,0,0,0.7);border-radius:12%;display:flex;justify-content:center;align-items:center;position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);cursor:pointer}
+        .play-button span{font:48px/1.5 sans-serif;color:white}
+    &lt;/style&gt;
+    &lt;a href=&#039;https://www.youtube.com/embed/WAF00Cd5P3g?autoplay=1&#039;&gt;
+        &lt;img src=&#039;https://img.youtube.com/vi/WAF00Cd5P3g/maxresdefault.jpg&#039; alt=&#039;Ejemplo 1&#039; onerror=&#039;this.src=&quot;https://img.youtube.com/vi/WAF00Cd5P3g/0.jpg&quot;&#039;&gt;
+        &lt;div class=&#039;play-button&#039;&gt;
+            &lt;span&gt;▶&lt;/span&gt;
+        &lt;/div&gt;
+    &lt;/a&gt;" title="Ejemplo 1" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen loading="lazy"></iframe>                                </div>
+                                                                                            <div class="carousel-slide">
+                                    <iframe width="100%" height="100%" src="https://www.youtube.com/embed/WAF00Cd5P3g" srcdoc="&lt;style&gt;
+        * {padding:0;margin:0;overflow:hidden;box-sizing:border-box}
+        html,body{height:100%;background:#000}
+        img{position:absolute;width:100%;height:100%;top:0;bottom:0;margin:auto;object-fit:cover}
+        .play-button{width:68px;height:48px;background:rgba(0,0,0,0.7);border-radius:12%;display:flex;justify-content:center;align-items:center;position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);cursor:pointer}
+        .play-button span{font:48px/1.5 sans-serif;color:white}
+    &lt;/style&gt;
+    &lt;a href=&#039;https://www.youtube.com/embed/WAF00Cd5P3g?autoplay=1&#039;&gt;
+        &lt;img src=&#039;https://img.youtube.com/vi/WAF00Cd5P3g/maxresdefault.jpg&#039; alt=&#039;Ejemplo 2&#039; onerror=&#039;this.src=&quot;https://img.youtube.com/vi/WAF00Cd5P3g/0.jpg&quot;&#039;&gt;
+        &lt;div class=&#039;play-button&#039;&gt;
+            &lt;span&gt;▶&lt;/span&gt;
+        &lt;/div&gt;
+    &lt;/a&gt;" title="Ejemplo 2" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen loading="lazy"></iframe>                                </div>
+                                                    </div>
+                                                    <button class="carousel-btn prev">&lt;</button>
+                            <button class="carousel-btn next">&gt;</button>
+                                            </div>
+                            </div>
+        </article>
+            </div>
+</section>
+
+<!-- SUPER MODAL SINGLE PAGE APP PARA EL JUEGO IMPOSTOR -->
+<div id="impostorLobbyModal" class="impostor-app-modal" style="display: none;">
+    <div class="impostor-app-header">
+        <h2>Impostor</h2>
+        <button id="closeLobbyBtn" class="close-modal-btn">&times;</button>
+    </div>
+    
+    <div class="impostor-app-body" id="lobbyBody">
+        <!-- Fase 1: Añadir nombres -->
+        <div class="lobby-section">
+            <h3>Jugadores (<span id="playercount">0</span>)</h3>
+            <div class="player-input-row">
+                <input type="text" id="newPlayerName" placeholder="Escribe un nombre...">
+                <button class="btn" id="addPlayerBtn" aria-label="Añadir jugador">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="currentColor" viewBox="0 0 16 16">
+                        <path d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4"/>
+                    </svg>
+                </button>
+            </div>
+            <ul id="playerListEl" class="player-list"></ul>
+            <p id="playerError" class="error-msg"></p>
+        </div>
+
+        <!-- Fase 2: Configuración de sala -->
+        <div class="lobby-section">
+            <h3>Configuración</h3>
+            
+            <div class="config-row">
+                <label for="numImpostors">Nº Impostores:</label>
+                <select id="numImpostors">
+                    <option value="1">1</option>
+                </select>
+            </div>
+            
+            <div class="config-row hint-toggle-row">
+                <label for="showHintCheck">Pista para impostores</label>
+                <label class="toggle-switch">
+                    <input type="checkbox" id="showHintCheck" checked>
+                    <span class="toggle-slider round"></span>
+                </label>
+            </div>
+
+            <div id="specialRolesContainer" class="config-roles reveal-screen no-select user-drag-none">
+
+            </div>
+
+            <div class="config-packets">
+                <h4>Paquetes de Palabras</h4>
+                <div id="wordPacketsContainer" class="packets-grid reveal-screen no-select user-drag-none">
+
+                </div>
+                <p id="packetError" class="error-msg"></p>
+            </div>
+
+        </div>
+
+        <div class="lobby-footer">
+            <button class="btn btn-start-game" id="startGameBtn" disabled>¡EMPEZAR PARTIDA!</button>
+        </div>
+    </div>
+
+    <!-- PANTALLA EN JUEGO (REVEAL) -->
+    <div class="impostor-app-body reveal-screen no-select user-drag-none" id="gameBody" style="display: none;">
+        <div id="gameStepShowRole" class="game-step-container">
+            <!-- Cabecera flex: texto a la izquierda, botón ayuda a la derecha -->
+            <div class="game-step-header">
+                <h3 id="currentPlayerTurnText">Turno de...</h3>
+                <div class="help-actio no-select user-drag-none">
+                    <button id="helpGameBtn" class="circle-btn">?</button>
+                </div>
+            </div>
+            <p class="swipe-hint">Desliza la carta hacia arriba para ver tu rol y suéltala para esconderlo.</p>
+            
+            <div class="card-reveal-area">
+                <div class="secret-card" id="secretCardContent">
+                    <img id="roleImg" src="" alt="">
+                    <h3 id="roleName" class="text-shadow-title" style="color:var(--c-primary)">Civil</h3>
+                    <p id="secretWordOrHint" class="secret-word">PALABRA</p>
+                    <p id="roleDesc" class="role-desc">Descripción del rol...</p>
+                </div>
+                <div class="card-cover" id="cardCover">
+                    <span>Arrastra</span>
+                    <img src="assets/games/impostor/roles/roles.png" alt="Tapa oculta">
+                    
+                </div>
+            </div>
+
+            <button class="btn" id="nextPlayerRoleBtn" disabled>Siguiente Jugador</button>
+        </div>
+
+        <!-- PANTALLA DE RESULTADOS DE QUIEN EMPIEZA -->
+        <div id="gameStepWhoStarts" class="game-step-container" style="display: none;">
+            <div class="who-starts-box">
+                <h3>Empieza jugando:</h3>
+                <h2 id="startingPlayerName" class="highlight-name">...</h2>
+            </div>
+            <div class="roles-summary-box">
+                <ul id="livePlayersList" class="live-list"></ul>
+            </div>
+            <button class="btn btn-danger" id="endGameRevealBtn">Terminar y revelar roles</button>
+        </div>
+        
+        <!-- PANTALLA DE REVELACIÓN FINAL -->
+        <div id="gameStepRevealAll" class="game-step-container" style="display: none;">
+            <h3>Resultados de la partida</h3>
+            <p style="margin-bottom: 1rem">La palabra secreta era: <strong id="finalSecretWord" style="color:var(--c-primary)"></strong></p>
+            <ul id="finalRolesList" class="final-roles-list"></ul>
+            <button class="btn" id="backToLobbyBtn">Volver a la sala</button>
+        </div>
+
+    </div>
+</div>
+
+<!-- MODAL DE AYUDA -->
+<div id="helpModal" class="help-modal no-select user-drag-none" style="display: none;">
+    <div class="help-modal-content">
+        <span class="close-help">&times;</span>
+        <h2>Instrucciones Rápidas</h2>
+        <div class="help-steps">
+            <div class="help-step"><img src="assets/games/impostor/steps/1.png" onerror="this.src='assets/logo.png'"> <p>Obtén tu rol</p></div>
+            <div class="help-step"><img src="assets/games/impostor/steps/2.png" onerror="this.src='assets/logo.png'"> <p>Da pistas</p></div>
+            <div class="help-step"><img src="assets/games/impostor/steps/3.png" onerror="this.src='assets/logo.png'"> <p>Presta atención</p></div>
+            <div class="help-step"><img src="assets/games/impostor/steps/4.png" onerror="this.src='assets/logo.png'"> <p>Votar</p></div>
+        </div>
+    </div>
+</div>
+
+<script src="scripts/games.js?20260416"></script>
+    </main>
+    <footer class="main-footer">
+        <div class="footer-container">
+            
+            <a href="index.html" class="footer-logo" aria-label="Ir al inicio">
+                <img src="assets/logo.png" alt="Logo Circular Cortina y sus amigos">
+            </a>
+
+            <div class="footer-social">
+                                                        <a href="https://www.instagram.com/cortinaysusamigos/" target="_blank" aria-label="Instagram">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-instagram" viewBox="0 0 16 16">
+                            <path d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.9 3.9 0 0 0-1.417.923A3.9 3.9 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.9 3.9 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.9 3.9 0 0 0-.923-1.417A3.9 3.9 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599s.453.546.598.92c.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.5 2.5 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.5 2.5 0 0 1-.92-.598 2.5 2.5 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233s.008-2.388.046-3.231c.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92s.546-.453.92-.598c.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92m-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217m0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334"/>
+                        </svg>
+                    </a>
+                                                            <a href="https://www.youtube.com/cortinaysusamigos" target="_blank" aria-label="YouTube">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-youtube" viewBox="0 0 16 16">
+                            <path d="M8.051 1.999h.089c.822.003 4.987.033 6.11.335a2.01 2.01 0 0 1 1.415 1.42c.101.38.172.883.22 1.402l.01.104.022.26.008.104c.065.914.073 1.77.074 1.957v.075c-.001.194-.01 1.108-.082 2.06l-.008.105-.009.104c-.05.572-.124 1.14-.235 1.558a2.01 2.01 0 0 1-1.415 1.42c-1.16.312-5.569.334-6.18.335h-.142c-.309 0-1.587-.006-2.927-.052l-.17-.006-.087-.004-.171-.007-.171-.007c-1.11-.049-2.167-.128-2.654-.26a2.01 2.01 0 0 1-1.415-1.419c-.111-.417-.185-.986-.235-1.558L.09 9.82l-.008-.104A31 31 0 0 1 0 7.68v-.123c.002-.215.01-.958.064-1.778l.007-.103.003-.052.008-.104.022-.26.01-.104c.048-.519.119-1.023.22-1.402a2.01 2.01 0 0 1 1.415-1.42c.487-.13 1.544-.21 2.654-.26l.17-.007.172-.006.086-.003.171-.007A100 100 0 0 1 7.858 2zM6.4 5.209v4.818l4.157-2.408z"/>
+                        </svg>
+                    </a>
+                                                            <a href="https://www.tiktok.com/@cortinaysusamigos" target="_blank" aria-label="TikTok">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-tiktok" viewBox="0 0 16 16">
+                            <path d="M9 0h1.98c.144.715.54 1.617 1.235 2.512C12.895 3.389 13.797 4 15 4v2c-1.753 0-3.07-.814-4-1.829V11a5 5 0 1 1-5-5v2a3 3 0 1 0 3 3z"/>
+                        </svg>
+                    </a>
+                                                    
+                                <a href="mailto:cortinaysusamigos@gmail.com" class="email-link" aria-label="Enviar correo">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-envelope" viewBox="0 0 16 16">
+                        <path d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2zm2-1a1 1 0 0 0-1 1v.217l7 4.2 7-4.2V4a1 1 0 0 0-1-1zm13 2.383-4.708 2.825L15 11.105zm-.034 6.876-5.64-3.471L8 9.583l-1.326-.795-5.64 3.47A1 1 0 0 0 2 13h12a1 1 0 0 0 .966-.741M1 11.105l4.708-2.897L1 5.383z"/>
+                    </svg>
+                </a>
+                            </div>
+
+            <div class="footer-copy">
+                &copy; 2026 Cortina y sus amigos.
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

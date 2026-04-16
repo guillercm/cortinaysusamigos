@@ -79,7 +79,6 @@ h6 {
 .user-drag-none {
     user-drag: none;
     -webkit-user-drag: none;
-    -moz-user-select: none;
 }
 
 a {

@@ -1,8 +1,0 @@
-{
-    "errors": {
-        "404": {
-            "title": "Página No Encontrada",
-            "message": "La página que estás buscando no existe."
-        }
-    }
-}

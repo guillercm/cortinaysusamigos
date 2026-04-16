@@ -90,6 +90,8 @@ document.addEventListener('DOMContentLoaded', () => {
             void track.offsetWidth;
 
             track.classList.remove('no-transition');
+            // Re-enabling transition through style explicitly
+            track.style.transition = ''; 
         }
     }
 
@@ -109,7 +111,11 @@ document.addEventListener('DOMContentLoaded', () => {
         goToSlide(currentIndex - 1);
     });
 
-    track.addEventListener('transitionend', adjustIndexIfCloned);
+    track.addEventListener('transitionend', (e) => {
+        // Solo respondemos a la transición del track (transform), no de sus hijos (burbujeo)
+        if (e.target !== track || e.propertyName !== 'transform') return;
+        adjustIndexIfCloned();
+    });
 
     // Initial positioning
     setTimeout(() => {
