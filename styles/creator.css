@@ -41,7 +41,6 @@
     font-size: 1.2rem;
     line-height: 1.8;
     color: var(--text-main);
-    text-align: justify;
 }
 
 @media (max-width: 768px) {
