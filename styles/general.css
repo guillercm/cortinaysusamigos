@@ -7,14 +7,14 @@
     --c-primary-hover: light-dark(#ea580c, #c2410c);
 
     /* Fondos */
-    --bg-base: light-dark(#f8fafc, #0f172a);
-    --bg-surface: light-dark(#ffffff, #1e293b);
-    --bg-surface-hover: light-dark(#f1f5f9, #334155);
+    --bg-base: light-dark(#d8e3f0, #0f172a);
+    --bg-surface: light-dark(#e2eaf7, #1e293b);
+    --bg-surface-hover: light-dark(#c5d2e5, #334155);
 
     /* Texto */
     --text-main: light-dark(#0f172a, #f8fafc);
-    --text-muted: light-dark(#64748b, #94a3b8);
-    --text-inverted: light-dark(#ffffff, #ffffff);
+    --text-muted: light-dark(#475569, #94a3b8);
+    --text-inverted: light-dark(#f8fafc, #ffffff);
 
     /* Estilos Visuales */
     --border-radius: 16px;
@@ -34,8 +34,9 @@
     padding: 0;
 }
 
-html, body {
-  overscroll-behavior-y: none;
+html,
+body {
+    overscroll-behavior-y: none;
 }
 
 body {
