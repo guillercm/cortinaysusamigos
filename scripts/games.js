@@ -89,6 +89,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const specialRolesContainer = document.getElementById('specialRolesContainer');
     const wordPacketsContainer = document.getElementById('wordPacketsContainer');
     const packetErrorMsg = document.getElementById('packetError');
+    const playerCountErrorMsg = document.getElementById('playerCountError');
 
     // Variables de Estado
     let players = [];
@@ -338,8 +339,11 @@ document.addEventListener('DOMContentLoaded', () => {
 
     function checkReadyStatus() {
         packetErrorMsg.textContent = "";
+        playerCountErrorMsg.textContent = "";
+
         let ready = true;
         if (players.length < 3) {
+            playerCountErrorMsg.textContent = "Para iniciar una partida debe de haber mínimo 3 jugadores.";
             ready = false;
         }
 

@@ -256,6 +256,11 @@
     margin-top: 0.5rem;
 }
 
+#playerCountError {
+    text-align: left;
+    padding-bottom: 12px;
+}
+
 .config-row {
     display: flex;
     align-items: center;
