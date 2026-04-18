@@ -54,7 +54,6 @@
 
 .error-message {
     font-size: clamp(1rem, 4vw, 1.25rem);
-    color: rgba(255, 255, 255, 0.9);
     margin-bottom: 1rem;
     line-height: 1.6;
 }

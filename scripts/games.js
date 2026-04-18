@@ -171,7 +171,7 @@ document.addEventListener('DOMContentLoaded', () => {
         let nameNorm = name.toLowerCase().replace(/\s+/g, '');
         for (let p of players) {
             if (p.toLowerCase().replace(/\s+/g, '') === nameNorm) {
-                playerErrorMsg.textContent = "¡Este jugador ya está en la salita!";
+                playerErrorMsg.textContent = "¡Este jugador ya está en la sala!";
                 return;
             }
         }
