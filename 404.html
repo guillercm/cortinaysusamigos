@@ -29,12 +29,13 @@
     <link rel="stylesheet" href="styles/general.css">
     <link rel="stylesheet" href="styles/header.css">
     <link rel="stylesheet" href="styles/footer.css">
+    <link rel="stylesheet" href="styles/cookies.css">
     
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&family=Inter:wght@400;500;700&display=swap" rel="stylesheet">
     
-    <script src="scripts/functions.js?20260416"></script>
+    <script src="scripts/functions.js?20260424"></script>
 <link rel="stylesheet" href="styles/404.css">
 </head>
 <body>
@@ -103,9 +104,28 @@
                             </div>
 
             <div class="footer-copy">
-                &copy; 2026 Cortina y sus amigos.
+                &copy; 2026 Cortina y sus amigos. · <a href="politicas-de-privacidad.html" target="_blank" class="policy-link">Políticas de Privacidad</a>
             </div>
         </div>
     </footer>
+
+    <!-- ── Modal de Consentimiento de Cookies ── -->
+    <div class="cookie-overlay" id="cookieConsentOverlay" role="dialog" aria-modal="true" aria-labelledby="cookieModalTitle">
+        <div class="cookie-modal">
+            <div class="cookie-modal__icon" aria-hidden="true">🍪</div>
+            <h2 class="cookie-modal__title" id="cookieModalTitle">Cookies de terceros</h2>
+            <p class="cookie-modal__desc">
+                Para reproducir este vídeo necesitamos cargar contenido de YouTube, lo que puede implicar el uso de
+                <strong>cookies de terceros</strong> para analíticas y preferencias de reproducción.<br><br>
+                Puedes consultar nuestra <a href="politicas-de-privacidad.html" target="_blank">Política de Privacidad</a> para más información.
+            </p>
+            <div class="cookie-modal__actions">
+                <button class="cookie-btn cookie-btn--deny" id="cookieBtnDeny" type="button">Denegar</button>
+                <button class="cookie-btn cookie-btn--accept" id="cookieBtnAccept" type="button">Aceptar</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="scripts/cookies.js?20260424"></script>
 </body>
 </html>

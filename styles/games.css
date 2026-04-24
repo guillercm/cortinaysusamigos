@@ -128,6 +128,17 @@
     right: 10px;
 }
 
+/* Mantener el hover del placeholder activo aunque el cursor
+   esté sobre los botones prev/next (hermanos del placeholder) */
+.carousel-videos:hover .yt-placeholder__img {
+    transform: scale(1.04);
+    filter: brightness(0.7);
+}
+
+.carousel-videos:hover .yt-placeholder__play {
+    transform: scale(1.12);
+}
+
 /* SPA Modal */
 .impostor-app-modal {
     position: fixed;

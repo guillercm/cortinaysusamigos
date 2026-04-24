@@ -5,7 +5,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const types = data.types || [];
     const products = data.products || [];
     const linksMap = {};
-    
+
     // Mapear links
     (data.links || []).forEach(link => {
         linksMap[link.id] = link;
@@ -27,13 +27,13 @@ document.addEventListener('DOMContentLoaded', () => {
         types.forEach(type => {
             const label = document.createElement('label');
             label.className = 'filter-label';
-            
+
             const input = document.createElement('input');
             input.type = 'checkbox';
             input.value = type.id;
-            
+
             input.addEventListener('change', (e) => {
-                if(e.target.checked) {
+                if (e.target.checked) {
                     activeTypes.add(type.id);
                 } else {
                     activeTypes.delete(type.id);
@@ -48,8 +48,8 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     } else {
         // Remover el contenedor de checkboxes
-        if(typeFiltersContainer) typeFiltersContainer.style.display = 'none';
-        if(clearFiltersBtn) clearFiltersBtn.style.display = 'none';
+        if (typeFiltersContainer) typeFiltersContainer.style.display = 'none';
+        if (clearFiltersBtn) clearFiltersBtn.style.display = 'none';
     }
 
     searchInput.addEventListener('input', (e) => {
@@ -85,6 +85,9 @@ document.addEventListener('DOMContentLoaded', () => {
         let visibleCount = 0;
 
         products.forEach(product => {
+            // Filtro por visibilidad
+            if (product.showing === false) return;
+
             // Filtro Texto
             let matchText = true;
             if (currentSearchTerm !== '') {
@@ -120,10 +123,10 @@ document.addEventListener('DOMContentLoaded', () => {
         // Creación del Carrusel
         const carousel = document.createElement('div');
         carousel.className = 'product-carousel';
-        
+
         const track = document.createElement('div');
         track.className = 'carousel-track';
-        
+
         const imgCount = typeof product.images === 'number' ? product.images : 1;
         for (let i = 1; i <= imgCount; i++) {
             const slide = document.createElement('div');
@@ -140,11 +143,11 @@ document.addEventListener('DOMContentLoaded', () => {
 
         if (imgCount > 1) {
             let currentIndex = 0;
-            
+
             const prevBtn = document.createElement('button');
             prevBtn.className = 'carousel-btn prev';
             prevBtn.innerHTML = '&#10094;'; // <
-            
+
             const nextBtn = document.createElement('button');
             nextBtn.className = 'carousel-btn next';
             nextBtn.innerHTML = '&#10095;'; // >
@@ -164,13 +167,13 @@ document.addEventListener('DOMContentLoaded', () => {
             carousel.appendChild(prevBtn);
             carousel.appendChild(nextBtn);
         }
-        
+
         article.appendChild(carousel);
 
         // Info info
         const info = document.createElement('div');
         info.className = 'product-info';
-        
+
         const title = document.createElement('h3');
         title.className = 'product-title';
         title.textContent = product.name;
@@ -185,6 +188,13 @@ document.addEventListener('DOMContentLoaded', () => {
             anchor.href = `${linkConfig.baseUrl}${product.link}`;
             anchor.textContent = linkConfig.buttonText || 'Ver';
             info.appendChild(anchor);
+
+            if (linkConfig.warning) {
+                const notice = document.createElement('p');
+                notice.className = 'product-link-notice';
+                notice.textContent = linkConfig.warning;
+                info.appendChild(notice);
+            }
         }
 
         article.appendChild(info);

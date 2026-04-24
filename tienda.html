@@ -3,14 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tienda | Cortina y sus amigos</title>
+    <title>Productos | Cortina y sus amigos</title>
     <link rel="shortcut icon" href="assets/favicon.ico" />
     <meta name="description" content="Página oficial de Cortina y sus amigos.">
     <meta name="robots" content="index, follow">
     <link rel="canonical" href="https://guillercm.github.io/cortinaysusamigos/tienda">
     
     <!-- Open Graph Metadata -->
-    <meta property="og:title" content="Tienda | Cortina y sus amigos">
+    <meta property="og:title" content="Productos | Cortina y sus amigos">
     <meta property="og:image" content="https://guillercm.github.io/cortinaysusamigos/assets/shared.png">
     <meta property="og:site_name" content="Cortina y sus amigos">
     <meta property="og:description" content="Página oficial de Cortina y sus amigos.">
@@ -20,7 +20,7 @@
     <!-- Twitter Metadata -->
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:site" content="Cortina y sus amigos">
-    <meta name="twitter:title" content="Tienda | Cortina y sus amigos">
+    <meta name="twitter:title" content="Productos | Cortina y sus amigos">
     <meta name="twitter:description" content="Página oficial de Cortina y sus amigos.">
     <meta name="twitter:image" content="https://guillercm.github.io/cortinaysusamigos/assets/shared.png">
     <meta name="twitter:url" content="https://guillercm.github.io/cortinaysusamigos/tienda">
@@ -29,12 +29,13 @@
     <link rel="stylesheet" href="styles/general.css">
     <link rel="stylesheet" href="styles/header.css">
     <link rel="stylesheet" href="styles/footer.css">
+    <link rel="stylesheet" href="styles/cookies.css">
     
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&family=Inter:wght@400;500;700&display=swap" rel="stylesheet">
     
-    <script src="scripts/functions.js?20260416"></script>
+    <script src="scripts/functions.js?20260424"></script>
 <link rel="stylesheet" href="styles/shop.css">
 </head>
 <body>
@@ -61,12 +62,12 @@
         </div>
     </header>
 <script>
-const SHOP_DATA = {"types":[{"id":1,"name":"Stickers y fondos de pantalla"}],"links":[{"id":1,"baseUrl":"https:\/\/www.etsy.com\/","buttonText":"Ver en Etsy"}],"products":[{"id":1,"typeId":1,"name":"Pack Cortina & Tattaira","images":7,"linkId":1,"link":"pack-cortina-tattaira-stickers-y-fondos"},{"id":2,"typeId":1,"name":"Pack Montoro & David","images":7,"linkId":1,"link":"pack-montoro-david-stickers-y-fondos"},{"id":3,"typeId":1,"name":"Pack Felipe & Carlos","images":7,"linkId":1,"link":"pack-felipe-carlos-stickers-y-fondos"}]};
+const SHOP_DATA = {"types":[{"id":1,"name":"Stickers y fondos de pantalla"}],"links":[{"id":1,"baseUrl":"https:\/\/www.etsy.com\/","buttonText":"Ver en Etsy","warning":"Serás redirigido a nuestra tienda oficial de Etsy donde el pago es seguro y tus compras están protegidas."}],"products":[{"id":1,"typeId":1,"name":"Pack Cortina & Tattaira","images":7,"linkId":1,"link":"pack-cortina-tattaira-stickers-y-fondos"},{"id":2,"typeId":1,"name":"Pack Montoro & David","images":7,"linkId":1,"link":"pack-montoro-david-stickers-y-fondos","showing":false},{"id":3,"typeId":1,"name":"Pack Felipe & Carlos","images":7,"linkId":1,"link":"pack-felipe-carlos-stickers-y-fondos","showing":false}]};
 </script>
 <main class="main-content">
 <section class="shop-section">
     <div class="page-header">
-        <h1>Tienda Oficial</h1>
+        <h1 class="hidden">Productos</h1>
     </div>
 
     <!-- Si hay más de un type en shop_config, JS inyectará aquí los filtros -->
@@ -91,7 +92,7 @@ const SHOP_DATA = {"types":[{"id":1,"name":"Stickers y fondos de pantalla"}],"li
     </div>
 </section>
 
-<script src="scripts/tienda.js?20260416"></script>
+<script src="scripts/tienda.js?20260424"></script>
     </main>
     <footer class="main-footer">
         <div class="footer-container">
@@ -125,9 +126,28 @@ const SHOP_DATA = {"types":[{"id":1,"name":"Stickers y fondos de pantalla"}],"li
                             </div>
 
             <div class="footer-copy">
-                &copy; 2026 Cortina y sus amigos.
+                &copy; 2026 Cortina y sus amigos. · <a href="politicas-de-privacidad.html" target="_blank" class="policy-link">Políticas de Privacidad</a>
             </div>
         </div>
     </footer>
+
+    <!-- ── Modal de Consentimiento de Cookies ── -->
+    <div class="cookie-overlay" id="cookieConsentOverlay" role="dialog" aria-modal="true" aria-labelledby="cookieModalTitle">
+        <div class="cookie-modal">
+            <div class="cookie-modal__icon" aria-hidden="true">🍪</div>
+            <h2 class="cookie-modal__title" id="cookieModalTitle">Cookies de terceros</h2>
+            <p class="cookie-modal__desc">
+                Para reproducir este vídeo necesitamos cargar contenido de YouTube, lo que puede implicar el uso de
+                <strong>cookies de terceros</strong> para analíticas y preferencias de reproducción.<br><br>
+                Puedes consultar nuestra <a href="politicas-de-privacidad.html" target="_blank">Política de Privacidad</a> para más información.
+            </p>
+            <div class="cookie-modal__actions">
+                <button class="cookie-btn cookie-btn--deny" id="cookieBtnDeny" type="button">Denegar</button>
+                <button class="cookie-btn cookie-btn--accept" id="cookieBtnAccept" type="button">Aceptar</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="scripts/cookies.js?20260424"></script>
 </body>
 </html>

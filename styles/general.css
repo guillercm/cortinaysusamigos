@@ -126,6 +126,11 @@ img {
 .page-header {
     text-align: center;
     margin-bottom: 2rem;
+    margin-top: 80px;
+}
+
+.hidden {
+    display: none;
 }
 
 .page-header h1 {

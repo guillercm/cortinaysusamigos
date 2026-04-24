@@ -1,0 +1,205 @@
+/* =============================================
+   COOKIES — Modal de Consentimiento & Placeholder
+   ============================================= */
+
+/* ── Overlay ──────────────────────────────── */
+.cookie-overlay {
+    position: fixed;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.55);
+    backdrop-filter: blur(4px);
+    -webkit-backdrop-filter: blur(4px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 9999;
+    padding: 1rem;
+
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s ease, visibility 0.3s ease;
+}
+
+.cookie-overlay.is-visible {
+    opacity: 1;
+    visibility: visible;
+}
+
+/* ── Modal ────────────────────────────────── */
+.cookie-modal {
+    background: var(--bg-surface);
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    border-radius: var(--border-radius);
+    box-shadow: 0 25px 60px rgba(0, 0, 0, 0.5);
+    padding: 2rem 2.25rem;
+    max-width: 480px;
+    width: 100%;
+    text-align: center;
+
+    transform: translateY(24px) scale(0.97);
+    transition: transform 0.35s cubic-bezier(0.34, 1.56, 0.64, 1);
+}
+
+.cookie-overlay.is-visible .cookie-modal {
+    transform: translateY(0) scale(1);
+}
+
+/* Icono de cookie */
+.cookie-modal__icon {
+    width: 64px;
+    height: 64px;
+    background: var(--c-primary-light);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 1.25rem;
+    font-size: 2rem;
+}
+
+/* Título */
+.cookie-modal__title {
+    font-family: var(--font-heading);
+    font-size: 1.4rem;
+    font-weight: 700;
+    color: var(--text-main);
+    margin-bottom: 0.75rem;
+}
+
+/* Descripción */
+.cookie-modal__desc {
+    font-family: var(--font-body);
+    font-size: 0.9rem;
+    color: var(--text-muted);
+    line-height: 1.65;
+    margin-bottom: 1.75rem;
+}
+
+.cookie-modal__desc a {
+    color: var(--c-primary);
+    text-decoration: underline;
+}
+
+/* Botones */
+.cookie-modal__actions {
+    display: flex;
+    gap: 0.75rem;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.cookie-btn {
+    flex: 1;
+    min-width: 120px;
+    padding: 0.7rem 1.25rem;
+    border-radius: var(--border-radius-sm);
+    font-family: var(--font-heading);
+    font-weight: 600;
+    font-size: 0.95rem;
+    cursor: pointer;
+    border: none;
+    transition: all 0.25s ease;
+}
+
+/* Aceptar */
+.cookie-btn--accept {
+    background: var(--c-primary);
+    color: var(--text-inverted);
+}
+
+.cookie-btn--accept:hover {
+    background: var(--c-primary-hover);
+    transform: translateY(-2px);
+    box-shadow: var(--shadow-md);
+}
+
+/* Denegar */
+.cookie-btn--deny {
+    background: transparent;
+    color: var(--text-muted);
+    border: 1.5px solid var(--bg-surface-hover);
+}
+
+.cookie-btn--deny:hover {
+    background: var(--bg-surface-hover);
+    color: var(--text-main);
+    transform: translateY(-2px);
+}
+
+/* ── Placeholder de iframe ────────────────── */
+.yt-placeholder {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+    overflow: hidden;
+    border-radius: inherit;
+    background: #111;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* La imagen de fondo (vertical u horizontal) */
+.yt-placeholder__img {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    display: block;
+    transition: transform 0.4s ease, filter 0.4s ease;
+    filter: brightness(0.85);
+}
+
+.yt-placeholder:hover .yt-placeholder__img {
+    transform: scale(1.04);
+    filter: brightness(0.7);
+}
+
+/* Botón de play superpuesto */
+.yt-placeholder__play {
+    position: relative;
+    z-index: 2;
+    width: 68px;
+    height: 68px;
+    background: rgba(0, 0, 0, 0.55);
+    border: 3px solid rgba(255, 255, 255, 0.85);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background 0.25s ease, transform 0.25s ease, border-color 0.25s ease;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.4);
+    backdrop-filter: blur(4px);
+    -webkit-backdrop-filter: blur(4px);
+}
+
+.yt-placeholder:hover .yt-placeholder__play {
+    transform: scale(1.12);
+}
+
+.yt-placeholder__play svg {
+    width: 32px;
+    height: 32px;
+    fill: #fff;
+    /* Desplazamiento visual para centrar el triángulo */
+    transform: translateX(3px);
+}
+
+/* ── Responsive ───────────────────────────── */
+@media (max-width: 480px) {
+    .cookie-modal {
+        padding: 1.5rem 1.25rem;
+    }
+
+    .cookie-modal__title {
+        font-size: 1.2rem;
+    }
+
+    .cookie-btn {
+        min-width: 100px;
+        font-size: 0.875rem;
+    }
+}
